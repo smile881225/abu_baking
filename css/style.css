@@ -1253,8 +1253,10 @@
                     top: 72.65vw;
                 }
                 .footer-content span {
-               
                     font-size: 3vw;
-                 
+                }
+                .footer-content {
+                    width: 304px;
+                    word-break: break-all;
                 }
             }
