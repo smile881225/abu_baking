@@ -218,7 +218,7 @@
             </div>
         </footer>
     </div>
-    
+
     <div class="mouse"></div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -311,20 +311,22 @@
         cancel.addEventListener('click', unnavclick);
         loading.addEventListener('animationend', loadingEnter);
         document.addEventListener('mousemove', move)
-        document.addEventListener('wheel', move)
-        document.addEventListener('wheel', wheel)
+        document.addEventListener('wheel', (e) => {
+            wheel(e); // 控制吐司列車效果
+            move(e);  // 滑動時更新滑鼠位置
+        })
         document.addEventListener('touchmove', wheel)
-       
+
     </script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
-       VanillaTilt.init(document.querySelectorAll(".product"), {
+        VanillaTilt.init(document.querySelectorAll(".product"), {
             max: 25,
             speed: 400,
-            glare:true,
+            glare: true,
             "max-glare": 1,
         });
-        
+
         //It also supports NodeList
         VanillaTilt.init(document.querySelectorAll(".product"));
     </script>

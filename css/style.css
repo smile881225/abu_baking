@@ -175,7 +175,7 @@ h6 {
 }
 
 .loading-click {
-    width: 8.5vw;
+    width: 17vw;
     cursor: pointer;
     animation: loadClick 1.5s ease-out infinite;
     scale: 0.7;
